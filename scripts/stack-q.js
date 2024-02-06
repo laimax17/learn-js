@@ -22,7 +22,7 @@ class PStack {
 class PStackImpl extends PStack {
   #persons = []
   constructor() {
-    super();
+    super(); // child class; we need this or else it will give run time error
   }
   push(p) {
     return this.#persons.push(p)
